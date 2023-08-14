@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import { useCallback, useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [tasks, setTasks] = useState([]);
+  const [input, setInput] = useState('');
+
+  useEffect(() => { 
+    const tasksStorage = localStorage.getItem('tasks');
+    if (tasksStorage) {
+      setTasks(JSON.parse(tasksStorage));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
+
+  const handleAdd = useCallback(() => {
+    setTasks([...tasks, input]);
+    setInput('');
+  }, [input, tasks]);
+
+  const handleRemove = useCallback(() => {
+    setTasks([]);
+  }, []);
+
+  return(
+    <div>
+      <ul>
+        {tasks.map(task => (
+          <li key={task}>{task}</li>
+        ))}
+      </ul>
+      <br/>
+      <input type="text" value={input} onChange={e => setInput(e.target.value)}/>
+      <button type='button' onClick={handleAdd}>
+        Adicionar tarefa
+      </button>
+      <button type='button' onClick={handleRemove}>
+        Limpar tarefas
+      </button>
     </div>
   );
 }
