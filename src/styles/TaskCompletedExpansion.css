@@ -1,0 +1,30 @@
+.task-completed-expansion {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-title {
+    flex-grow: 1;
+  }
+  
+  .arrow-icon {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.expanded {
+    transform: rotate(180deg);
+  }
+  
+  .task-details {
+    padding: 10px;
+  }  
