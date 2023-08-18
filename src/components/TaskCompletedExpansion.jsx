@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/TaskCompletedExpansion.css';
 
-const TaskCompletedExpansion = ({ task }) => {
+const TaskCompletedExpansion = ({ task, title }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpansion = () => {
@@ -10,14 +10,13 @@ const TaskCompletedExpansion = ({ task }) => {
 
   return (
     <div className="task-completed-expansion">
-      <div className="task-header" onClick={toggleExpansion}>
-        <span className="task-title">{task}</span>
+       <div className="task-header" onClick={toggleExpansion}>
+        <span className="task-title">{title}</span>
         <span className={`arrow-icon ${expanded ? 'expanded' : ''}`}>&#9660;</span>
       </div>
       {expanded && (
         <div className="task-details">
-          {/* Render additional information here */}
-          Additional details for task: {task}
+          {task}
         </div>
       )}
     </div>

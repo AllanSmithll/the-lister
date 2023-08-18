@@ -77,20 +77,10 @@ function App() {
           </div>
         </aside>
         <div className='the-lister-container'>
-      {/* Resto do seu JSX */}
-      <div className='tasks-completed'>
-        <h2>
-          Tarefas concluídas
-        </h2>
-        <ul className='task-completed-list'>
-          {tasksCompleteds.map(task =>
-            <li key={task}>
-              <TaskCompletedExpansion task={task} />
-            </li>
-          )}
-        </ul>
-      </div>
-    </div>
+        <div className='tasks-completed'>
+          <TaskCompletedExpansion title="Tarefas concluídas" task={tasksCompleteds.map(task => <li key={task}>{task}</li>)} />
+          </div>
+        </div>
       </main>
     </div>
   );
