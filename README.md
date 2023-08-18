@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Projeto "The Lister"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto **The Lister** é uma aplicação web simples desenvolvido para ajudar na organização de tarefas. O projeto foi criado com o objetivo de oferecer uma interface intuitiva para adicionar, gerenciar e marcar tarefas como concluídas. A aplicação é desenvolvida em **React** e utiliza componentes funcionais para criar uma experiência interativa e amigável.
 
-## Available Scripts
+## Funcionalidades Principais
 
-In the project directory, you can run:
+1. Adicionar Tarefas: Os usuários podem adicionar novas tarefas à lista por meio de um campo de entrada de texto.
 
-### `npm start`
+2. Marcar Tarefas Concluídas: As tarefas adicionadas podem ser marcadas como concluídas, tornando a gestão do progresso mais fácil.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Lista de Tarefas Ativas: As tarefas que ainda estão em andamento são exibidas em uma lista para que os usuários possam visualizar e atualizar facilmente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Lista de Tarefas Concluídas: As tarefas concluídas são organizadas em uma lista separada, permitindo que os usuários revisem suas realizações.
 
-### `npm test`
+5. Limpar Tarefas: Os usuários têm a opção de limpar todas as tarefas, removendo tanto as tarefas ativas quanto as concluídas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acesso ao Projeto
 
-### `npm run build`
+O projeto "The Lister" está disponível online na seguinte URL: [https://allansmithll.github.io/the-lister/](https://allansmithll.github.io/the-lister/). Os usuários podem acessar o aplicativo diretamente do navegador para começar a usar suas funcionalidades.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Licença
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O projeto "The Lister" é distribuído sob a [Licença Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). A licença Apache 2.0 é uma licença de software livre e de código aberto que permite aos desenvolvedores usar, modificar e distribuir o software sujeito a certas condições. Ela é amplamente reconhecida e utilizada na comunidade de desenvolvimento de software.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para mais detalhes sobre a licença, consulte o arquivo `LICENSE` no repositório do projeto ou visite a [página oficial da Licença Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) para obter mais informações.
 
-### `npm run eject`
+## Conclusão
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O projeto "The Lister" é uma aplicação web de gerenciamento de tarefas desenvolvida por Allan Amâncio (ou Allan Smith). Ele fornece uma solução simples e eficaz para manter um controle organizado das tarefas diárias. Os usuários podem acessar o projeto online, experimentar suas funcionalidades e contribuir para o seu desenvolvimento. Com a licença Apache 2.0, o projeto promove o compartilhamento e a colaboração na comunidade de desenvolvedores de software.
