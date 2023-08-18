@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Navbar, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import  TaskCompletedExpansion  from './components/TaskCompletedExpansion'
-
+import Header from './components/Header'
 import './styles/App.css';
+import Footer from './components/Footer';
 
 function App() {
   const [tasksActives, setTasksActives] = useState([]);
@@ -16,11 +16,17 @@ function App() {
     if (tasksStorage) {
       setTasksActives(JSON.parse(tasksStorage));
     }
+
+    const tasksCache = JSON.parse(sessionStorage.getItem('tasksCompleteds'));
+    if (tasksCache) {
+      setTasksCompleteds(tasksCache);
+    }
   }, []);
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasksActives));
-  }, [tasksActives])
+    sessionStorage.setItem('tasksCompleteds', JSON.stringify(tasksCompleteds));
+  }, [tasksActives, tasksCompleteds]);
 
   const handleAdd = useCallback(() => {
     if (input !== '') {
@@ -48,25 +54,31 @@ function App() {
     }
   }, [tasksCompleteds, tasksActives]);
 
+  const handleTaskToggle = task => {
+    if (tasksCompleteds.includes(task)) {
+      setTasksCompleteds(tasksCompleteds.filter(completedTask => completedTask !== task));
+      setTasksActives([...tasksActives, task]);
+    } else {
+      setTasksCompleteds([...tasksCompleteds, task]);
+      setTasksActives(tasksActives.filter(activeTask => activeTask !== task));
+    }
+  };
+
   return(
     <div className='the-lister-container'>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#">Navbar</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <header id='header-container'>
-        <h1 id='title'>The Lister</h1>
-      </header>
+      <Header />
       <main id='main-content'>
         <aside className='tasks-card-container'>
+          <h2>The Lister</h2>
           <ul className='tasks-list'>
             {tasksActives.map (task =>
                 <li key={task}><input type='checkbox' checked={false} onChange={() => handleCheckedItem(task)}/>{task}
                 </li>
               )}
           </ul>
-          <input type="text" value={input} onChange={e => setInput(e.target.value)}/>
+          <div className='input-container'>
+            <input type="text" value={input} onChange={e => setInput(e.target.value)}/>
+          </div>
           <div className='buttons-container'>
             <button type='button' onClick={handleAdd}>
               Adicionar tarefa
@@ -77,11 +89,16 @@ function App() {
           </div>
         </aside>
         <div className='the-lister-container'>
-        <div className='tasks-completed'>
-          <TaskCompletedExpansion title="Tarefas concluídas" task={tasksCompleteds.map(task => <li key={task}>{task}</li>)} />
+          <div className='tasks-completed'>
+            <TaskCompletedExpansion
+    title="Tarefas concluídas"
+    tasks={tasksCompleteds}
+    onTaskToggle={handleTaskToggle}
+            />
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

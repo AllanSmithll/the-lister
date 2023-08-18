@@ -1,28 +1,6 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  flex: 1;
-}
-
-#header-container {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-#title {
-  font-size: 27px;
-  margin-bottom: 0;
-}
-
 h2 {
-  font-size: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .bg-body-tertiary {
@@ -40,6 +18,15 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+
+.tasks-card-container {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
 }
 
 .tasks-list {
@@ -60,20 +47,28 @@ h2 {
 .buttons-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 10px;
   gap: 10px;
 }
 
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
 input[type="text"] {
   width: 90%;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -83,7 +78,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #0000aa;
 }
 
 .task-completed-list {
@@ -91,10 +86,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  #header-container {
-    padding: 10px;
-  }
-
   #main-content {
     width: 100%;
     padding: 10px;

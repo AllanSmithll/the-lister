@@ -1,0 +1,30 @@
+/* Header.css */
+.bg-body-tertiary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#header-container {
+  background-color: #f9f9f9;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#header-container .navbar {
+  background-color: transparent;
+  border: none;
+}
+
+#header-container .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+#header-container .navbar-brand:hover {
+  color: #0056b3;
+}

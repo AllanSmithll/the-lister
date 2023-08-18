@@ -27,4 +27,24 @@
   
   .task-details {
     padding: 10px;
-  }  
+  }
+  
+  .task-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .task-details li label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-details li input[type="checkbox"] {
+    margin-right: 10px;
+  }
