@@ -1,19 +1,24 @@
 .task-completed-expansion {
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
   
   .task-header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
   }
   
   .task-title {
     flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
   }
   
   .arrow-icon {
@@ -26,7 +31,7 @@
   }
   
   .task-details {
-    padding: 10px;
+    padding: 15px;
   }
   
   .task-details ul {
@@ -37,7 +42,7 @@
   .task-details li {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   .task-details li label {
@@ -47,4 +52,10 @@
   
   .task-details li input[type="checkbox"] {
     margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .task-completed-expansion {
+      padding: 15px 0;
+    }
   }

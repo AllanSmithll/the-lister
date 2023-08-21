@@ -7,7 +7,7 @@ const Header = () => {
         <header id='header-container' className='bg-body-tertiary'>
             <Navbar expand="lg">
                 <Container>
-                    <Navbar.Brand href="home">The Lister</Navbar.Brand>
+                    <Navbar.Brand href="home" className="header-lister-name">The Lister</Navbar.Brand>
                 </Container>
             </Navbar>
         </header>
