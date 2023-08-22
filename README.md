@@ -1,6 +1,6 @@
 # Projeto "The Lister"
 
-O projeto **The Lister** é uma aplicação web simples desenvolvido para ajudar na organização de tarefas. O projeto foi criado com o objetivo de oferecer uma interface intuitiva para adicionar, gerenciar e marcar tarefas como concluídas. A aplicação é desenvolvida em **React** e utiliza componentes funcionais para criar uma experiência interativa e amigável.
+O projeto **The Lister** é uma aplicação web simples desenvolvido para ajudar na organização de tarefas. O projeto foi criado com o objetivo de oferecer uma interface intuitiva para adicionar, gerenciar e marcar tarefas como concluídas. A aplicação é desenvolvida em **React** e utiliza componentes funcionais para criar uma experiência interativa e amigável, trabalhando também com Local Storage (Web Storage) das tarefas, tanto das tarefas ativas quanto das tarefas concluídas.
 
 ## Funcionalidades Principais
 
@@ -12,7 +12,7 @@ O projeto **The Lister** é uma aplicação web simples desenvolvido para ajudar
 
 4. Lista de Tarefas Concluídas: As tarefas concluídas são organizadas em uma lista separada, permitindo que os usuários revisem suas realizações.
 
-5. Limpar Tarefas: Os usuários têm a opção de limpar todas as tarefas, removendo tanto as tarefas ativas quanto as concluídas.
+5. Limpar Tarefas: Os usuários têm a opção de limpar todas as tarefas, removendo as tarefas ativas.
 
 ## Acesso ao Projeto
 
