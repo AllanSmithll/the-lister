@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/the-lister/static/css/main.00b18ad3.css",
-    "main.js": "/the-lister/static/js/main.bdf3f667.js",
+    "main.css": "/the-lister/static/css/main.757f38e4.css",
+    "main.js": "/the-lister/static/js/main.39833c43.js",
     "index.html": "/the-lister/index.html",
-    "main.00b18ad3.css.map": "/the-lister/static/css/main.00b18ad3.css.map",
-    "main.bdf3f667.js.map": "/the-lister/static/js/main.bdf3f667.js.map"
+    "main.757f38e4.css.map": "/the-lister/static/css/main.757f38e4.css.map",
+    "main.39833c43.js.map": "/the-lister/static/js/main.39833c43.js.map"
   },
   "entrypoints": [
-    "static/css/main.00b18ad3.css",
-    "static/js/main.bdf3f667.js"
+    "static/css/main.757f38e4.css",
+    "static/js/main.39833c43.js"
   ]
 }
