@@ -22,7 +22,7 @@ const TaskCompletedExpansion = ({ title, tasks, onTaskToggle }) => {
                 <label>
                   <input
                     type="checkbox"
-                    checked
+                    checked={tasks.includes(task)}
                     onChange={() => onTaskToggle(task)}
                   />
                   {task}

@@ -68,7 +68,7 @@ const MainContent = () => {
         <h2>To do</h2> {/* Título para as tarefas ativas */}
         <ul className='tasks-list'>
           {tasksActives.map(task => (
-            <li key={task}>
+            <li key={task} className='visible'>
               <input
                 type='checkbox'
                 checked={false}

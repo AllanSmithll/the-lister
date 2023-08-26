@@ -34,6 +34,17 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .tasks-list li.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .tasks-list li.checked {
+    opacity: 0.6;
   }
   
   .tasks-list li input[type="checkbox"] {
@@ -61,7 +72,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px 0;
+    transition: border-color 0.3s ease-in-out;
   }
+
+input[type="text"]:focus {
+  border-color: #000;
+}
   
   button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
