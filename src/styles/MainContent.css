@@ -36,6 +36,7 @@
     margin-bottom: 15px;
     transform: translateY(-10px);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-right: 10px;
   }
 
   .tasks-list li.visible {
@@ -50,7 +51,29 @@
   .tasks-list li input[type="checkbox"] {
     margin-right: 10px;
   }
+
+  .tasks-list li .trash-button {
+    margin-left: auto;
+  }
+
+  .trash-button {
+    font-size: 3px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+  }
   
+  .trash-icon {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .trash-icon:hover {
+    background-color: #000055;
+  }
+  
+    
   .buttons-container {
     display: flex;
     justify-content: center;
